@@ -333,16 +333,15 @@ export default function RallyDetail() {
           </fieldset>
 
           {/* Save Button */}
-          <button 
-            className="btn w-fit btn-outline mt-4 bg-base-100 rounded-lg text-amber-50 hover:bg-amber-50 hover:text-base-100"
-            onClick={() => {
-              // later you can replace this with API call
-              console.log('Saved!', form);
-              setIsEditing(false);
-            }}
-          >
-            Save Changes
-          </button>
+                  <button 
+          className="btn w-fit btn-outline mt-4 bg-base-100 rounded-lg text-amber-50 hover:bg-amber-50 hover:text-base-100"
+          onClick={() => {
+            console.log('Saved form data:', form); 
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
         </>
       ) : (
         <>
