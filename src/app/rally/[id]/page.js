@@ -1,5 +1,18 @@
 'use client';
 
+
+
+// app/beacon/[id]/page.tsx (or .js)
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+  ];
+}
+
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
 
